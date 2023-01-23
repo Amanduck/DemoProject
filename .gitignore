@@ -4,4 +4,6 @@
 .json
 .vscode/
 .vscode/launch.json
+/.vscode
+
 
