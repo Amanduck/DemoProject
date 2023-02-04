@@ -6,7 +6,7 @@
 using namespace std;
 int choice, k;
 double a, b, c, delta, x1, x2;
-std::string p;
+string p;
 
 int main()
 {
@@ -46,6 +46,11 @@ int main()
         x1=(-b+sqrt(delta))/2*a;
         x2=(-b-sqrt(delta))/2*a;
         cout<<endl<<"Delta = "<<delta<<", a jej miejsca zerowe wynosza: "<<x1<<" oraz "<<x2<<". "<<endl;
+            p="inf";
+            cout<<"Wspolczynnik a jest wiekszy od 0 i funckja ma 2 miejsca zerowe."<<endl;
+            cout<<"Funkcja ma wartosci>0 na przedzialach: xe("<<p<<", "<<x2<<") u ("<<x1<<", "<<p<<").";
+            cout<<"Funkcja ma wartosci<0 na przedzialach: xe("<<x2<<", "<<x1<<").";
+            cout<<endl<<endl<<endl;
         }
     
         break;
@@ -57,11 +62,6 @@ int main()
             }
             
         }
-        //cout<<endl<<"Czy chcesz wypisac przedzialy na ktorych funkcja ma wartosci wieksze od 0 i mniejsze od 0? 1/0: ";
-            // cin>>k;
-            p="inf";
-            cout<<"Wspolczynnik a jest wiekszy od 0 i funckja ma 2 miejsca zerowe."<<endl;
-            cout<<"Funkcja ma wartosci>0 na przedzialach: xe("<<p<<", "<<x2<<") u ("<<x1<<", "<<p<<").";
-            cout<<"Funkcja ma wartosci<0 na przedzialach: xe("<<x2<<", "<<x1<<").";
-            cout<<endl<<endl<<endl;
+
+
     return 0;}
